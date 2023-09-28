@@ -10,22 +10,44 @@
     <h1>Password generator</h1>
     <label for="length">Length of the Password</label>
     <input type="range" name="length" min="0" max="25" step="1">
+    <span id="lengthNumber">Number</span>
     <br>
     <h2>Include:</h2>
-    <label for="upperCase">A-Z</label>
-    <input name="upperCase" type="radio" value="upperCase" />
-    <label for="lowerCase">a-z</label>
-    <input name="lowerCase" type="radio" value="lowerCase" />
-    <br>
-    <label for="numbers">0-9</label>
-    <input name="numbers" type="radio" value="numbers" />
-    <label for="specialCharacter">Special characters</label>
-    <input name="specialCharacter" type="radio" value="specialCharacter" />
+    <div class="checkbox-container">
+        <label class="checkbox-label" for="upperCase">
+            <input name="upperCase" type="checkbox" value="upperCase">
+            A-Z
+        </label>
+    </div>
+
+    <div class="include-options checkbox-container">
+        <label class="checkbox-label" for="lowerCase">
+            <input name="lowerCase" type="checkbox" value="lowerCase">
+            a-z
+        </label>
+    </div>
+
+    <div class="include-options checkbox-container">
+        <label class="checkbox-label" for="numbers">
+            <input name="numbers" type="checkbox" value="numbers">
+            0-9
+        </label>
+    </div>
+
+    <div class="include-options checkbox-container">
+        <label class="checkbox-label" for="specialCharacter">
+            <input name="specialCharacter" type="checkbox" value="specialCharacter">
+            Special characters
+        </label>
+    </div>
     <br>
     <button>Generate Password</button>
     <br>
     <input type="text" id="generatedPassword" readonly>
     <span id="Copy">Copy</span>
     <span id="Edit">Edit</span>
+
+    <script>
+    </script>
 </body>
 </html>
