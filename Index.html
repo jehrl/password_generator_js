@@ -14,19 +14,15 @@
     <br>
     <h2>Include:</h2>
     <div class="checkbox-container">
+        <input name="upperCase" type="checkbox" value="upperCase">
         <label class="checkbox-label" for="upperCase">
-            <input name="upperCase" type="checkbox" value="upperCase">
             A-Z
         </label>
     </div>
-
-    <div class="include-options checkbox-container">
-        <label class="checkbox-label" for="lowerCase">
-            <input name="lowerCase" type="checkbox" value="lowerCase">
-            a-z
-        </label>
+    <div class="checkbox-container">
+        <input name="lowerCase" type="checkbox" value="lowerCase">
+        <label class="checkbox-label" for="lowerCase">a-z</label>
     </div>
-
     <div class="include-options checkbox-container">
         <label class="checkbox-label" for="numbers">
             <input name="numbers" type="checkbox" value="numbers">
@@ -35,8 +31,8 @@
     </div>
 
     <div class="include-options checkbox-container">
+        <input name="specialCharacter" type="checkbox" value="specialCharacter">
         <label class="checkbox-label" for="specialCharacter">
-            <input name="specialCharacter" type="checkbox" value="specialCharacter">
             Special characters
         </label>
     </div>
@@ -46,8 +42,6 @@
     <input type="text" id="generatedPassword" readonly>
     <span id="Copy">Copy</span>
     <span id="Edit">Edit</span>
-
-    <script>
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
